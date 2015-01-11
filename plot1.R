@@ -15,5 +15,7 @@ plot1 <- function() {
   ## epc3.df<-epc2.df[complete.cases(epc2.df),]
   ## ready to plot
   par(mar = rep(4, 4))
+  png("Plot1.png", width = 480, height = 480)
   hist(epc2.df$Global_active_power, col=2,main="Global Active Power",xlab="Global Active Power (kilowatts)")
+  dev.off()
 }

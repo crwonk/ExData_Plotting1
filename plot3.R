@@ -17,7 +17,8 @@ plot3 <- function() {
    
   par(mar = rep(4, 4))
   
-  png("plot3.png", width = 480, height = 480)
+  png("Plot3.png", width = 480, height = 480)
+  
   plot( epc2.df$ts, epc2.df$Sub_metering_1, type="l",main="",xlab="",ylab="Energy sub metering")
   lines(epc2.df$ts, epc2.df$Sub_metering_3, type="l",col="blue")
   lines(epc2.df$ts, epc2.df$Sub_metering_2, type="l",col="red")

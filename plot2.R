@@ -15,7 +15,9 @@ plot2 <- function() {
   ## epc3.df<-epc2.df[complete.cases(epc2.df),]
   ## ready to plot
   par(mar = rep(2, 4))
-  png("plot2.png", width = 480, height = 480)
+  
+  png("Plot2.png", width = 480, height = 480)
+  
   plot( epc2.df$ts, epc2.df$Global_active_power, type="l",main="",xlab="",ylab="Global Active Power (kilowatts)")
   dev.off()
 }
